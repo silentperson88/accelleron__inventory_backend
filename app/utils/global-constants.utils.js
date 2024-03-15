@@ -1,0 +1,41 @@
+global.constant = {
+  EXPORT_SERVICES: ['excel', 'pdf'],
+  DATE_FORMAT_FOR_EXPORT: 'yyyy-mm-dd-HHMMss',
+  HEADER_FONT_STYLE: 'Helvetica-Bold',
+  DEFAULT_FONT_STYLE: 'Helvetica',
+  PDF_ROW_FONT_COLOR: 'black',
+  PDF_HEADER_FONT_COLOR: 'white',
+  ODD_COLOR_CODE: '#F7FBFF',
+  EVEN_COLOR_CODE: '#FFFFFF',
+  DEFAULT_PDF_MARGIN: 20,
+  DEFAULT_PDF_SIZE: 'A4',
+  DEFAULT_PAGE: 0,
+  DEFAULT_PER_PAGE: 10,
+  DESC_VAL: -1,
+  ASC_VAL: 1,
+  PASSWORD_MIN: 6,
+  APP_LOGO_PATH: `${process.env.CDN_URL}/logo/reynard_logo_pdf.png`,
+  PDF_HEADER_COLOR: '#191a51',
+  PDF_TABLE_WIDTH: 546,
+  UPLOAD_FILE_LIMIT: 3,
+  GDPR_QUESTION_TITLE: [
+    'Grant permission to use information for business purposes',
+    'Grant permission to use e-mail for communication',
+  ],
+
+  // Loan form constants
+  PLEASE_ACCEPT_TERMS_AND_CONDITIONS: 'Please accept terms and conditions',
+
+  // Bank CRUD constants
+  BANK_ALREADY_EXISTS: 'Bank already exists',
+  BANK_CREATE_SUCCESS: 'Bank created successfully',
+  BANK_CREATE_FAILED: 'Bank creation failed',
+  BANK_UPDATE_SUCCESS: 'Bank updated successfully',
+  BANK_UPDATE_FAILED: 'Bank updation failed',
+  BANK_DELETE_SUCCESS: 'Bank deleted successfully',
+  BANK_DELETE_FAILED: 'Bank deletion failed',
+  BANK_NOT_FOUND: 'Bank not found',
+  BANK_ALREADY_DELETED: 'Bank already deleted',
+  BANK_ALREADY_ACTIVE: 'Bank already active',
+  BANK_ALREADY_INACTIVE: 'Bank already inactive',
+};
