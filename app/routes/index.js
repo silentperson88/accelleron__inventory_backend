@@ -1,5 +1,5 @@
-const baseRoute = '/api/v1';
+const baseRoute = '/api';
 
 module.exports = app => {
-  app.use(`${baseRoute}/excel`, require('./upload.route'));
+  app.use(`${baseRoute}/inventory`, require('./inventory.routes'));
 };
