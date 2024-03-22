@@ -13,9 +13,18 @@ const palletSchema = new mongoose.Schema(
       default: null,
       required: true,
     },
+    status: {
+      type: String,
+      enum: ['in-use', 'available', 'in-repair', 'damaged'],
+      default: 'available',
+    },
     isActive: {
       type: Boolean,
       default: true,
+    },
+    remark: {
+      type: String,
+      default: null,
     },
     deletedAt: {
       type: Date,

@@ -126,7 +126,7 @@ exports.getAllInventory = async (req, res) => {
   try {
     let page = parseInt(req.query.page) || 0;
     let perPage = parseInt(req.query.perPage) || 10;
-    let sort = req.query.sort || 'asc';
+    let sort = req.query.sort || 'desc';
     let { search } = req.query;
 
     let filterData = {

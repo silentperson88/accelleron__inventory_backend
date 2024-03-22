@@ -25,4 +25,6 @@ module.exports = {
   INVALID_RACK: 'please provide valid rack',
   INVALID_ROW: 'please provide valid row',
   INVALID_COLUMN: 'please provide valid column',
+  INVALID_IS_ACTIVE: 'please provide valid isActive',
+  INVALID_PALLET: 'please provide valid pallet',
 };
