@@ -14,4 +14,17 @@ module.exports = {
   /* inventory */
   INVENTORY_FETCH_SUCCESS: 'Inventory fetched successfully',
   INVENTORY_FETCH_ERROR: 'Error fetching inventory',
+
+  /* Pallet */
+  RACK_ALREADY_EXIST: 'Rack already exist',
+  PALLET_ALREADY_EXIST: 'Pallet already exist',
+  PALLET_CREATION_SUCCESS: 'Pallet created successfully',
+  PALLET_CREATION_ERROR: 'Error pallet creation',
+  PALLET_FETCH_SUCCESS: 'Pallet fetched successfully',
+  PALLET_FETCH_ERROR: 'Error fetching pallet',
+  INVALID_RACK: 'please provide valid rack',
+  INVALID_ROW: 'please provide valid row',
+  INVALID_COLUMN: 'please provide valid column',
+  INVALID_IS_ACTIVE: 'please provide valid isActive',
+  INVALID_PALLET: 'please provide valid pallet',
 };
