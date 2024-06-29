@@ -4,10 +4,18 @@ const routes = express.Router();
 const inventoryController = require('../controllers/inventory.controller');
 const { upload } = require('../middlewares/upload.middleware');
 
+// middleware
+const { verifyToken } = require('../middlewares/auth.middleware');
+
 // upload excel sheet to json in DB;
-routes.post('/fromexcel', upload.single('uploadfile'), inventoryController.excelUploader);
+routes.post(
+  '/fromexcel',
+  verifyToken,
+  upload.single('uploadfile'),
+  inventoryController.excelUploader
+);
 
 // get all inventory data
-routes.get('/', inventoryController.getAllInventory);
+routes.get('/', verifyToken, inventoryController.getAllInventory);
 
 module.exports = routes;
